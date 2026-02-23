@@ -1,0 +1,113 @@
+name: 📱 CUI FR-Mobile-Safari Tests
+
+on:
+  workflow_call:
+    inputs:
+      project:
+        description: "Playwright project to run"
+        required: true
+        type: string
+
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Playwright project to run"
+        required: true
+        default: "fr-mobile-safari"
+        type: string
+
+jobs:
+  mobile-tests:
+    name: Run CUI FR-Mobile-Safari Tests
+    runs-on:
+      group: CA
+      labels: as24-docker
+    timeout-minutes: 30
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Runner info
+        shell: bash
+        run: |
+          echo "Runner name: ${{ runner.name }}"
+          echo "Runner labels: ${{ runner.labels }}"
+          echo "Private IP: $(hostname -I 2>/dev/null || true)"
+          echo "Public IP: $(curl -s ifconfig.me || true)"
+
+      - name: Run Playwright Tests in Docker
+        shell: bash
+        run: |
+          PROJECT="${{ inputs.project || github.event.inputs.project }}"
+          echo "Running Playwright project: ${PROJECT}"
+
+          docker run --rm \
+            -v "${{ github.workspace }}:/app" \
+            -w /app \
+            -e PROJECT="$PROJECT" \
+            -e PLAYWRIGHT_PROJECT="$PROJECT" \
+            -e DD_API_KEY="${{ secrets.DD_API_KEY }}" \
+            -e DATADOG_API_HOST="${{ secrets.DATADOG_API_HOST }}" \
+            mcr.microsoft.com/playwright:v1.57.0-noble \
+            bash -lc '
+              set +e
+              mkdir -p test-results blob-report
+              yarn install --frozen-lockfile
+              yarn test --project="$PROJECT"
+              exit_code=$?
+
+              echo "Test exit code: $exit_code"
+
+              src="test-results/results.json"
+              if [[ ! -f "$src" ]]; then
+                echo "JSON file not found, creating empty fallback"
+                printf "%s\n" "{\"suites\":[],\"stats\":{\"expected\":0,\"failed\":0}}" > "$src"
+              fi
+
+              echo "📂 blob-report:"; ls -la blob-report || true
+              echo "📂 test-results:"; ls -la test-results || true
+
+              exit "$exit_code"
+            '
+
+      - name: Upload blob report for merging
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results-fr-mobile-safari-blob
+          path: blob-report/**
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Upload JSON results for notifications
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fr-mobile-safari-json-results
+          path: test-results/results.json
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Generate HTML report
+        if: always()
+        run: |
+          docker run \
+            --rm \
+            -v "${{ github.workspace }}:/app" \
+            -w /app \
+            mcr.microsoft.com/playwright:v1.57.0-noble /bin/bash -c "
+              mkdir -p /app/test-results &&
+              npx playwright merge-reports --reporter=./src/utils/reporters/custom-html-reporter.ts /app/blob-report"
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results-fr-mobile-safari-html
+          path: test-results/**
+          retention-days: 7
+          if-no-files-found: warn

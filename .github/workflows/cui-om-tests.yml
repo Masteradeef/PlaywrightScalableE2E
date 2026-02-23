@@ -1,0 +1,304 @@
+name: 🚀 CUI Tests - OM Projects
+
+on:
+  schedule:
+    - cron: '0 5,8,11,14,17,20,23,2 * * *'  # Run every 3 hours starting from midnight EST (5 AM UTC)
+
+  workflow_dispatch:
+    inputs:
+      projects:
+        description: 'Select projects to run (comma-separated)'
+        required: false
+        default: 'en-desktop-chrome,fr-desktop-chrome,en-mobile-safari,fr-mobile-safari'
+        type: string
+
+concurrency:
+  group: cui-tests-om-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DD_API_KEY: ${{ secrets.DD_API_KEY }}
+  DATADOG_API_HOST: ${{ secrets.DATADOG_API_HOST }}
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  PLAYWRIGHT_RUN_ID: ${{ github.run_id }}
+  GITHUB_RUN_ID: ${{ github.run_id }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  en-desktop-chrome-tests:
+    name: 🖥️ EN-Desktop-Chrome Tests
+    uses: ./.github/workflows/en-desktop-chrome.yml
+    secrets: inherit
+    with:
+      project: en-desktop-chrome
+
+  fr-desktop-chrome-tests:
+    name: 🖥️ FR-Desktop-Chrome Tests
+    needs: en-desktop-chrome-tests
+    if: always()
+    uses: ./.github/workflows/fr-desktop-chrome.yml
+    secrets: inherit
+    with:
+      project: fr-desktop-chrome
+
+  en-mobile-safari-tests:
+    name: 📱 EN-Mobile-Safari Tests
+    needs: fr-desktop-chrome-tests
+    if: always()
+    uses: ./.github/workflows/en-mobile-safari.yml
+    secrets: inherit
+    with:
+      project: en-mobile-safari
+
+  fr-mobile-safari-tests:
+    name: 📱 FR-Mobile-Safari Tests
+    needs: en-mobile-safari-tests
+    if: always()
+    uses: ./.github/workflows/fr-mobile-safari.yml
+    secrets: inherit
+    with:
+      project: fr-mobile-safari
+
+  consolidate:
+    name: 📦 Consolidate Results + Publish Report
+    needs: [en-desktop-chrome-tests, fr-desktop-chrome-tests, en-mobile-safari-tests, fr-mobile-safari-tests]
+    if: always()
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      # -----------------------------
+      # Download artifacts (blob + json)
+      # -----------------------------
+      - name: Download EN-Desktop-Chrome blob report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: test-results-en-desktop-chrome-blob
+          path: en-desktop-chrome-blob
+
+      - name: Download FR-Desktop-Chrome blob report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: test-results-fr-desktop-chrome-blob
+          path: fr-desktop-chrome-blob
+
+      - name: Download EN-Mobile-Safari blob report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: test-results-en-mobile-safari-blob
+          path: en-mobile-safari-blob
+
+      - name: Download FR-Mobile-Safari blob report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: test-results-fr-mobile-safari-blob
+          path: fr-mobile-safari-blob
+
+      - name: Download EN-Desktop-Chrome JSON results
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: en-desktop-chrome-json-results
+          path: en-desktop-chrome-json
+
+      - name: Download FR-Desktop-Chrome JSON results
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: fr-desktop-chrome-json-results
+          path: fr-desktop-chrome-json
+
+      - name: Download EN-Mobile-Safari JSON results
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: en-mobile-safari-json-results
+          path: en-mobile-safari-json
+
+      - name: Download FR-Mobile-Safari JSON results
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: fr-mobile-safari-json-results
+          path: fr-mobile-safari-json
+
+      - name: Show downloaded files
+        if: always()
+        shell: bash
+        run: |
+          echo "📂 en-desktop-chrome-blob:"; ls -la en-desktop-chrome-blob || true
+          echo "📂 fr-desktop-chrome-blob:"; ls -la fr-desktop-chrome-blob || true
+          echo "📂 en-mobile-safari-blob:"; ls -la en-mobile-safari-blob || true
+          echo "📂 fr-mobile-safari-blob:"; ls -la fr-mobile-safari-blob || true
+          echo "📂 en-desktop-chrome-json:"; ls -la en-desktop-chrome-json || true
+          echo "📂 fr-desktop-chrome-json:"; ls -la fr-desktop-chrome-json || true
+          echo "📂 en-mobile-safari-json:"; ls -la en-mobile-safari-json || true
+          echo "📂 fr-mobile-safari-json:"; ls -la fr-mobile-safari-json || true
+
+      # -----------------------------
+      # Normalize + merge JSON
+      # -----------------------------
+      - name: Normalize JSON results for notification access
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p json-artifacts
+
+          # Copy if present
+          if [[ -f "en-desktop-chrome-json/results.json" ]]; then
+            cp en-desktop-chrome-json/results.json json-artifacts/en-desktop-chrome-results.json
+          fi
+          if [[ -f "fr-desktop-chrome-json/results.json" ]]; then
+            cp fr-desktop-chrome-json/results.json json-artifacts/fr-desktop-chrome-results.json
+          fi
+          if [[ -f "en-mobile-safari-json/results.json" ]]; then
+            cp en-mobile-safari-json/results.json json-artifacts/en-mobile-safari-results.json
+          fi
+          if [[ -f "fr-mobile-safari-json/results.json" ]]; then
+            cp fr-mobile-safari-json/results.json json-artifacts/fr-mobile-safari-results.json
+          fi
+
+          # Fallbacks (so merge never crash)
+          if [[ ! -f "json-artifacts/en-desktop-chrome-results.json" ]]; then
+            printf '%s\n' '{"suites":[],"stats":{"expected":0,"failed":0}}' > json-artifacts/en-desktop-chrome-results.json
+          fi
+          if [[ ! -f "json-artifacts/fr-desktop-chrome-results.json" ]]; then
+            printf '%s\n' '{"suites":[],"stats":{"expected":0,"failed":0}}' > json-artifacts/fr-desktop-chrome-results.json
+          fi
+          if [[ ! -f "json-artifacts/en-mobile-safari-results.json" ]]; then
+            printf '%s\n' '{"suites":[],"stats":{"expected":0,"failed":0}}' > json-artifacts/en-mobile-safari-results.json
+          fi
+          if [[ ! -f "json-artifacts/fr-mobile-safari-results.json" ]]; then
+            printf '%s\n' '{"suites":[],"stats":{"expected":0,"failed":0}}' > json-artifacts/fr-mobile-safari-results.json
+          fi
+
+      - name: Merge Playwright JSON results
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          yarn ts-node tools/results/mergeResults.cli.ts \
+            json-artifacts/en-desktop-chrome-results.json \
+            json-artifacts/fr-desktop-chrome-results.json \
+            json-artifacts/en-mobile-safari-results.json \
+            json-artifacts/fr-mobile-safari-results.json \
+            json-artifacts/merged-results.json
+
+          echo "📊 JSON artifacts:"
+          ls -la json-artifacts
+
+      - name: Upload JSON for notification workflow
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: consolidated-test-results
+          path: json-artifacts/
+          retention-days: 7
+          if-no-files-found: warn
+
+      # -----------------------------
+      # Merge blob → combined report (custom reporter)
+      # -----------------------------
+      - name: Merge blob reports into combined HTML report
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🔄 Merging all blob reports..."
+          rm -rf combined-results test-results
+          mkdir -p combined-results test-results
+
+          # Copy all blob zips if present
+          if [[ -d "en-desktop-chrome-blob" ]]; then
+            cp -R en-desktop-chrome-blob/* combined-results/ 2>/dev/null || true
+          fi
+          if [[ -d "fr-desktop-chrome-blob" ]]; then
+            cp -R fr-desktop-chrome-blob/* combined-results/ 2>/dev/null || true
+          fi
+          if [[ -d "en-mobile-safari-blob" ]]; then
+            cp -R en-mobile-safari-blob/* combined-results/ 2>/dev/null || true
+          fi
+          if [[ -d "fr-mobile-safari-blob" ]]; then
+            cp -R fr-mobile-safari-blob/* combined-results/ 2>/dev/null || true
+          fi
+
+          # If nothing copied, create an empty report folder so Pages still works
+          if ! compgen -G "combined-results/*" > /dev/null; then
+            echo "⚠️ No blob reports found; skipping merge-reports."
+          else
+            npx playwright merge-reports --reporter=./src/utils/reporters/custom-html-reporter.ts combined-results
+            echo "✅ Combined report generated"
+          fi
+
+          # Ensure Pages compatibility
+          touch test-results/.nojekyll
+
+      # -----------------------------
+      # Publish to GitHub Pages
+      # -----------------------------
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload consolidated report as Pages artifact
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: test-results
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Publish report link
+        if: always()
+        shell: bash
+        run: |
+          if [[ -n "${{ steps.deploy.outputs.page_url }}" ]]; then
+            echo "Combined HTML report: [View report](${{ steps.deploy.outputs.page_url }})" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Combined HTML report: deployment URL unavailable." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  slack-notify:
+    name: 🔔 Slack Notification
+    needs: [consolidate]
+    if: always()
+    permissions:
+      contents: read
+      actions: read
+    uses: ./.github/workflows/slack-notification.yml
+    secrets: inherit
+    with:
+      run_id: ${{ github.run_id }}
+      run_number: ${{ github.run_number }}
+      conclusion: ${{ needs.consolidate.result }}

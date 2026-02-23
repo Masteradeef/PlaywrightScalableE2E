@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@pages/*": ["playwright/pages/*"],
+      "@tests/*": ["playwright/e2e/*"],
+      "@data/*": ["playwright/test-data/*"],
+      "@env/*": ["playwright/env/*"],
+      "@utils/*": ["playwright/utils/*"]
+    },
+    "types": ["node", "@playwright/test"]
+  },
+  "include": [
+    "playwright/**/*.ts",
+    "playwright.config.ts",
+    "tools/**/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test-results",
+    "playwright-report",
+    "blob-report"
+  ]
+}

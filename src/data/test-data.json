@@ -1,0 +1,66 @@
+{
+  "testData": {
+    "users": {
+      "validUser": {
+        "username": "testuser@example.com",
+        "password": "testpassword123",
+        "firstName": "Test",
+        "lastName": "User"
+      },
+      "invalidUser": {
+        "username": "invalid@example.com",
+        "password": "wrongpassword"
+      }
+    },
+    "search": {
+      "validQueries": ["playwright", "testing", "automation"],
+      "invalidQueries": ["", "   ", "!@#$%"],
+      "longQuery": "this is a very long search query that tests the system behavior with extensive text input"
+    },
+    "filters": {
+      "en": {
+        "Location": "Location",
+        "MakeModelTrim": "Make, Model, Trim",
+        "Price": "Price"
+      },
+      "fr": {
+        "Location": "Emplacement",
+        "MakeModelTrim": "Marque, Modèle, Finition",
+        "Price": "Prix"
+      }
+    },
+    "filterVariations": {
+      "fr": {
+        "Location": ["Emplacement", "Localisation", "Lieu"],
+        "Price": ["Prix", "Tarif", "Coût"]
+      }
+    },
+    "buttons": {
+      "en": {
+        "done": "Done"
+      },
+      "fr": {
+        "done": "Terminé"
+      }
+    },
+    "urls": {
+      "home": "/",
+      "login": "/login",
+      "search": "/search",
+      "profile": "/profile"
+    },
+    "vehicles": {
+      "makes": ["Toyota", "Honda", "Ford", "Chevrolet", "BMW", "Mercedes", "Audi"],
+      "models": {
+        "Toyota": ["Camry", "Corolla", "RAV4", "Prius"],
+        "Honda": ["Civic", "Accord", "CR-V", "Pilot"],
+        "Ford": ["F-150", "Escape", "Explorer", "Mustang"]
+      },
+      "locations": {
+        "en": ["Toronto, ON", "Vancouver, BC", "Montreal, QC", "Calgary, AB"],
+        "fr": ["Toronto, ON", "Vancouver, CB", "Montréal, QC", "Calgary, AB"]
+      },
+      "postalCodes": ["M5V 3C6", "V6B 1A1", "H2Y 1C6", "T2P 2M7"]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+name: Send Slack Notification
+
+on:
+  workflow_call:
+    inputs:
+      run_id:
+        required: true
+        type: string
+      run_number:
+        required: true
+        type: string
+      conclusion:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - name: Download consolidated test results
+        uses: actions/download-artifact@v4
+        with:
+          name: consolidated-test-results
+          path: test-results
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+
+      - run: yarn ts-node src/utils/reporters/send-slack-notification.ts
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          WORKFLOW_STATUS: ${{ inputs.conclusion }}
+          RUN_NUMBER: ${{ inputs.run_number }}
+          GITHUB_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ inputs.run_id }}

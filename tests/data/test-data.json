@@ -1,0 +1,462 @@
+{
+    "credentials": {
+        "name": "SpiderMan",
+        "username": "favouritelisting_traderqa@mailinator.com",
+        "password": "Test1234!"
+    },
+    "submitLead": {
+        "desktop": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "email": "consumer-72726b+user1@inbox.mailtrap.io",
+                "consumerUserId": "consumer-72726b+user",
+                "dealerEmailAddress": "dealer-e98b08+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377989",
+                "dealerInboxId": "4377993",
+                "phone": "2347291045",
+                "successMessageTitle": "Your request has been sent",
+                "successMessageBody": "You will receive a copy at consumer-72726b+user1@inbox.mailtrap.io. We added the vehicle to your favourites.",
+                "successMessageBody1": "You will receive a copy at ",
+                "successMessageBody2": ". We added the vehicle to your favourites.",
+                "emptyFavouritesText": "Your list of favourites is empty!",
+                "successMessageSMSBody": "Your text request has been successfully sent, and you will hear back from the seller soon.",
+                "makeModel": "BMW Z8",
+                "dealerPhoneNumber": "+18888562124",
+                "dealer": "OMP Trader QA (Do not use)",
+                "body1": "Hi there,",
+                "body2": "Here.s your AutoTrader\\.ca vehicle inquiry",
+                "body3": "Thank you for using AutoTrader\\.ca[\\s\\S]*?closer to finding[\\s\\S]*?next[\\s\\S]*?vehicle",
+                "body4": "The dealership will be in touch shortly.",
+                "saleLead": "/SaleLead",
+                "subject": "Received Your Vehicle Inquiry For",
+                "consumerTextEmailMessage": "Hi, this looks interesting! Is it still available?",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailSubject": "Important Sales Lead from AutoTrader.ca",
+                "dealerEmailBody1": "SALES LEAD - Received from AutoTrader.ca"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "email": "consumer-c80e6d+user1@inbox.mailtrap.io",
+                "consumerUserId": "consumer-c80e6d+user",
+                "dealerEmailAddress": "dealer-abaf9c+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377990",
+                "dealerInboxId": "4377994",
+                "phone": "2347291045",
+                "successMessageTitle": "Votre demande a été envoyée avec succès.",
+                "successMessageBody": "Une copie vous sera envoyée à consumer-c80e6d+user1@inbox.mailtrap.io. Le véhicule a été ajouté à vos",
+                "successMessageBody1": "Une copie vous sera envoyée à ",
+                "successMessageBody2": ". Le véhicule a été ajouté à vos",
+                "emptyFavouritesText": "Votre liste de favoris est vide !",
+                "successMessageSMSBody": "Votre demande par texte a bien été envoyée, le vendeur vous répondra bientôt.",
+                "makeModel": "BMW Z8",
+                "dealerPhoneNumber": "+18888562124",
+                "dealer": "OMP Trader QA (Do not use)",
+                "body1": "Bonjour,",
+                "body2": "Voici une copie de votre demande AutoHebdo\\.net",
+                "body3": "Merci de faire confiance à AutoHebdo\\.net pour trouver votre prochain véhicule",
+                "body4": "Le commerçant communiquera avec vous sous peu.",
+                "saleLead": "/SaleLead",
+                "subject": "Demande d'information",
+                "consumerTextEmailMessage": "Bonjour, votre véhicule m'intéresse! Est-il déjà vendu?",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "dealerEmailBody1": "Contact de vente - Reçu de AutoHebdo.net"
+            }
+        },
+        "mobile": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "email": "consumer-d80316+user1@inbox.mailtrap.io",
+                "consumerUserId": "consumer-d80316+user",
+                "dealerEmailAddress": "dealer-c14355+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377991",
+                "dealerInboxId": "4377996",
+                "phone": "2347291045",
+                "successMessageTitle": "Your request has been sent",
+                "successMessageBody": "You will receive a copy at consumer-d80316+user1@inbox.mailtrap.io. We added the vehicle to your favourites.",
+                "successMessageBody1": "You will receive a copy at ",
+                "successMessageBody2": ". We added the vehicle to your favourites.",
+                "emptyFavouritesText": "Your list of favourites is empty!",
+                "successMessageSMSBody": "Your text request has been successfully sent, and you will hear back from the seller soon.",
+                "makeModel": "BMW Z8",
+                "dealerPhoneNumber": "+18888562124",
+                "dealer": "OMP Trader QA (Do not use)",
+                "body1": "Hi there,",
+                "body2": "Here.s your AutoTrader\\.ca vehicle inquiry",
+                "body3": "Thank you for using AutoTrader\\.ca[\\s\\S]*?closer to finding[\\s\\S]*?next[\\s\\S]*?vehicle",
+                "body4": "The dealership will be in touch shortly.",
+                "saleLead": "/SaleLead",
+                "subject": "Received Your Vehicle Inquiry For",
+                "consumerTextEmailMessage": "Hi, this looks interesting! Is it still available?",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailSubject": "Important Sales Lead from AutoTrader.ca",
+                "dealerEmailBody1": "SALES LEAD - Received from AutoTrader.ca"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "email": "consumer-c5dbe0+user1@inbox.mailtrap.io",
+                "consumerUserId": "consumer-c5dbe0+user",
+                "dealerEmailAddress": "dealer-2ed389+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377992",
+                "dealerInboxId": "4377997",
+                "phone": "2347291045",
+                "successMessageTitle": "Votre demande a été envoyée avec succès.",
+                "successMessageBody": "Une copie vous sera envoyée à consumer-c5dbe0+user1@inbox.mailtrap.io. Le véhicule a été ajouté à vos",
+                "successMessageBody1": "Une copie vous sera envoyée à ",
+                "successMessageBody2": ". Le véhicule a été ajouté à vos",
+                "emptyFavouritesText": "Votre liste de favoris est vide !",
+                "successMessageSMSBody": "Votre demande par texte a bien été envoyée, le vendeur vous répondra bientôt.",
+                "makeModel": "BMW Z8",
+                "dealerPhoneNumber": "+18888562124",
+                "dealer": "OMP Trader QA (Do not use)",
+                "body1": "Bonjour,",
+                "body2": "Voici une copie de votre demande AutoHebdo\\.net",
+                "body3": "Merci de faire confiance à AutoHebdo\\.net pour trouver votre prochain véhicule",
+                "body4": "Le commerçant communiquera avec vous sous peu.",
+                "saleLead": "/SaleLead",
+                "subject": "Demande d'information",
+                "consumerTextEmailMessage": "Bonjour, votre véhicule m'intéresse! Est-il déjà vendu?",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "dealerEmailBody1": "Contact de vente - Reçu de AutoHebdo.net"
+            }
+        }
+    },
+    "saleLead": {
+        "desktop": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-72726b+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-e98b08+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377989",
+                "dealerInboxId": "4377993",
+                "phone": "2347291045",
+                "successMessageTitle": "Your request has been sent",
+                "successMessageBody1": "You will receive a copy at ",
+                "successMessageBody2": ". We added the vehicle to your favourites.",
+                "endPoint": "/SaleLead",
+                "subject": "Received Your Vehicle Inquiry For",
+                "fromEmail": "no-reply@trader.ca",
+                "body1": "Hi there,",
+                "body2": "Here.s your AutoTrader\\.ca vehicle inquiry",
+                "body3": "Thank you for using AutoTrader\\.ca[\\s\\S]*?closer to finding[\\s\\S]*?next[\\s\\S]*?vehicle",
+                "body4": "The dealership will be in touch shortly.",
+                "consumerTextEmailMessage": "Hi, this looks interesting! Is it still available?",
+                "dealerEmailSubject": "Important Sales Lead from AutoTrader.ca",
+                "dealerEmailBody1": "SALES LEAD - Received from AutoTrader.ca"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-c80e6d+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "consumer-c80e6d+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377990",
+                "dealerInboxId": "4377994",
+                "phone": "2347291045",
+                "successMessageTitle": "Votre demande a été envoyée avec succès.",
+                "successMessageBody1": "Une copie vous sera envoyée à consumer-c80e6d+user1@inbox.mailtrap.io. Le véhicule a été ajouté à vos",
+                "successMessageBody2": "Une copie vous sera envoyée à ",
+                "endPoint": "/SaleLead",
+                "subject": "Demande d'information",
+                "fromEmail": "no-reply@trader.ca",
+                "body1": "Bonjour,",
+                "body2": "Voici une copie de votre demande AutoHebdo\\.net",
+                "body3": "Merci de faire confiance à AutoHebdo\\.net pour trouver votre prochain véhicule",
+                "body4": "Le commerçant communiquera avec vous sous peu.",
+                "consumerTextEmailMessage": "Bonjour, votre véhicule m'intéresse! Est-il déjà vendu?",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "dealerEmailBody1": "Contact de vente - Reçu de AutoHebdo.net"
+            }
+        },
+        "mobile": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-d80316+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-c14355+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377991",
+                "dealerInboxId": "4377996",
+                "phone": "2347291045",
+                "successMessageTitle": "Your request has been sent",
+                "successMessageBody1": "You will receive a copy at ",
+                "successMessageBody2": ". We added the vehicle to your favourites.",
+                "endPoint": "/SaleLead",
+                "subject": "Received Your Vehicle Inquiry For",
+                "fromEmail": "no-reply@trader.ca",
+                "body1": "Hi there,",
+                "body2": "Here.s your AutoTrader\\.ca vehicle inquiry",
+                "body3": "Thank you for using AutoTrader\\.ca[\\s\\S]*?closer to finding[\\s\\S]*?next[\\s\\S]*?vehicle",
+                "body4": "The dealership will be in touch shortly.",
+                "consumerTextEmailMessage": "Hi, this looks interesting! Is it still available?",
+                "dealerEmailSubject": "Important Sales Lead from AutoTrader.ca",
+                "dealerEmailBody1": "SALES LEAD - Received from AutoTrader.ca"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-c5dbe0+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-2ed389+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377992",
+                "dealerInboxId": "4377997",
+                "phone": "2347291045",
+                "successMessageTitle": "Votre demande a été envoyée avec succès.",
+                "successMessageBody1": "Une copie vous sera envoyée à consumer-c5dbe0+user@inbox.mailtrap.io. Le véhicule a été ajouté à vos",
+                "successMessageBody2": "Une copie vous sera envoyée à ",
+                "endPoint": "/SaleLead",
+                "subject": "Demande d'information",
+                "fromEmail": "no-reply@trader.ca",
+                "body1": "Bonjour,",
+                "body2": "Voici une copie de votre demande AutoHebdo\\.net",
+                "body3": "Merci de faire confiance à AutoHebdo\\.net pour trouver votre prochain véhicule",
+                "body4": "Le commerçant communiquera avec vous sous peu.",
+                "consumerTextEmailMessage": "Bonjour, votre véhicule m'intéresse! Est-il déjà vendu?",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "dealerEmailBody1": "Contact de vente - Reçu de AutoHebdo.net"
+            }
+        }
+    },
+    "dealBuilder": {
+        "en": {
+            "url": "/offers/~153d9650d-fd38-4569-8fd7-5da531523bf2",
+            "dealBuilderurl": "^https:\\/\\/bmwottos\\.shop\\.autotrader\\.ca\\/en\\/details\\/3596317\\?id=53d9650d-fd38-4569-8fd7-5da531523bf2(&.*)?$"
+        },
+        "fr": {
+            "url": "/annonces/~153d9650d-fd38-4569-8fd7-5da531523bf2",
+            "dealBuilderurl": ""
+        }
+    },
+    "carfax": {
+        "desktop": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-72726b+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-e98b08+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377989",
+                "dealerInboxId": "4377993",
+                "successMessage": "We have sent your request for the History Report to the seller. Make sure to check your inbox.",
+                "endPoint": "/CarFaxSalesLead",
+                "dealerEmailSubject": "CARFAX Canada Report Potential Customer Lead",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailBody1": "A potential customer has viewed your ad on www.autotrader.ca and is requesting a CARFAX Canada report on the vehicle.",
+                "dealerEmailBody2": "Please send the CARFAX Canada report to: ",
+                "dealerEmailBody3": "Your BMW Z8 2023",
+                "dealerEmailBody4": "https://www.autotrader.ca/go/5-69158512",
+                "dealerEmailBody5": "To purchase a CARFAX Canada report, visit:",
+                "dealerEmailBody6": "https://www.carfax.ca/orderform.aspx?vin=&report=claims&ref=trader&refID=5_69158512_20260123172548995&refdomain=2"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-c80e6d+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "consumer-c80e6d+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377990",
+                "dealerInboxId": "4377994",
+                "successMessage": "Votre demande de rapport d’historique a été transmise au vendeur. Consultez votre boîte de courriels",
+                "endPoint": "/CarFaxSalesLead",
+                "dealerEmailSubject": "Acheteur potentiel d’AutoHebdo.net",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailBody1": "Un client potentiel a vu votre annonce sur www.autohebdo.net et demande un rapport CARFAX Canada sur le véhicule.",
+                "dealerEmailBody2": "vous plaît envoyer le rapport CARFAX Canada à :",
+                "dealerEmailBody3": "Votre annonce pour le BMW Z8 2023",
+                "dealerEmailBody4": "https://www.autohebdo.net/go/5-69158512",
+                "dealerEmailBody5": "Pour acheter un rapport CARFAX Canada, visitez le site:",
+                "dealerEmailBody6": "https://www.carfax.ca/orderform.aspx?vin=&report=claims&ref=trader&refID=5_69158512_20260123172548995&refdomain=2"
+            }
+        },
+        "mobile": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-d80316+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-c14355+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377991",
+                "dealerInboxId": "4377996",
+                "successMessage": "We have sent your request for the History Report to the seller. Make sure to check your inbox.",
+                "endPoint": "/CarFaxSalesLead",
+                "dealerEmailSubject": "CARFAX Canada Report Potential Customer Lead",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailBody1": "A potential customer has viewed your ad on www.autotrader.ca and is requesting a CARFAX Canada report on the vehicle.",
+                "dealerEmailBody2": "Please send the CARFAX Canada report to: ",
+                "dealerEmailBody3": "Your BMW Z8 2023",
+                "dealerEmailBody4": "https://www.autotrader.ca/go/5-69158512",
+                "dealerEmailBody5": "To purchase a CARFAX Canada report, visit:",
+                "dealerEmailBody6": "https://www.carfax.ca/orderform.aspx?vin=&report=claims&ref=trader&refID=5_69158512_20260123172548995&refdomain=2"
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "consumerUserId": "consumer-c5dbe0+user",
+                "domain": "@inbox.mailtrap.io",
+                "dealerEmailAddress": "dealer-2ed389+user1@inbox.mailtrap.io",
+                "consumerInboxId": "4377992",
+                "dealerInboxId": "4377997",
+                "successMessage": "Votre demande de rapport d’historique a été transmise au vendeur. Consultez votre boîte de courriels",
+                "endPoint": "/CarFaxSalesLead",
+                "dealerEmailSubject": "Acheteur potentiel d’AutoHebdo.net",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailBody1": "Un client potentiel a vu votre annonce sur www.autohebdo.net et demande un rapport CARFAX Canada sur le véhicule.",
+                "dealerEmailBody2": "vous plaît envoyer le rapport CARFAX Canada à :",
+                "dealerEmailBody3": "Votre annonce pour le BMW Z8 2023",
+                "dealerEmailBody4": "https://www.autohebdo.net/go/5-69158512",
+                "dealerEmailBody5": "Pour acheter un rapport CARFAX Canada, visitez le site:",
+                "dealerEmailBody6": "https://www.carfax.ca/orderform.aspx?vin=&report=claims&ref=trader&refID=5_69158512_20260123172548995&refdomain=2"
+            }
+        }
+    },
+    "textLead": {
+        "desktop": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "phone": "2347291045",
+                "dealerEmailAddress": "dealer-e98b08+user1@inbox.mailtrap.io",
+                "dealerInboxId": "4377993",
+                "successMessageSMSBody": "Your text request has been successfully sent, and you will hear back from the seller soon.",
+                "endPoint": "/TextSeller",
+                "successMessage": "We have sent your request for the History Report to the seller. Make sure to check your inbox.",
+                "dealerEmailSubject": "Important TEXT Lead from AutoTrader.ca",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailTitle": "TEXT LEAD - RECEIVED FROM AUTOTRADER.CA",
+                "dealerEmailMessage": "Hi, I have a question about a 2023 BMW Z8 that I found on autotrader.ca."
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "phone": "2347291045",
+                "dealerEmailAddress": "consumer-c80e6d+user1@inbox.mailtrap.io",
+                "dealerInboxId": "4377994",
+                "successMessageSMSBody": "Votre demande par texte a bien été envoyée, le vendeur vous répondra bientôt.",
+                "endPoint": "/TextSeller",
+                "successMessage": "Votre demande de rapport d’historique a été transmise au vendeur. Consultez votre boîte de courriels",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailTitle": "CONTACT DE VENTE - REÇU DE AUTOHEBDO.NET",
+                "dealerEmailMessage": "Bonjour, je souhaiterais en savoir plus sur le/la 2023 BMW Z8 que j'ai trouvé sur AutoHebdo.net."
+            }
+        },
+        "mobile": {
+            "en": {
+                "url": "/offers/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "phone": "2347291045",
+                "dealerEmailAddress": "dealer-c14355+user1@inbox.mailtrap.io",
+                "dealerInboxId": "4377996",
+                "successMessageSMSBody": "Your text request has been successfully sent, and you will hear back from the seller soon.",
+                "endPoint": "/TextSeller",
+                "successMessage": "We have sent your request for the History Report to the seller. Make sure to check your inbox.",
+                "dealerEmailSubject": "Important TEXT Lead from AutoTrader.ca",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailTitle": "TEXT LEAD - RECEIVED FROM AUTOTRADER.CA",
+                "dealerEmailMessage": "Hi, I have a question about a 2023 BMW Z8 that I found on autotrader.ca."
+            },
+            "fr": {
+                "url": "/annonces/~6b2a39bd-b19f-4740-9db4-19af1be2c2ab",
+                "name": "SpiderMan",
+                "phone": "2347291045",
+                "dealerEmailAddress": "dealer-2ed389+user1@inbox.mailtrap.io",
+                "dealerInboxId": "4377997",
+                "successMessageSMSBody": "Votre demande par texte a bien été envoyée, le vendeur vous répondra bientôt.",
+                "endPoint": "/TextSeller",
+                "successMessage": "Votre demande de rapport d’historique a été transmise au vendeur. Consultez votre boîte de courriels",
+                "dealerEmailSubject": "Important: client potentiel généré par AutoHebdo.net",
+                "fromEmail": "no-reply@trader.ca",
+                "dealerEmailTitle": "CONTACT DE VENTE - REÇU DE AUTOHEBDO.NET",
+                "dealerEmailMessage": "Bonjour, je souhaiterais en savoir plus sur le/la 2023 BMW Z8 que j'ai trouvé sur AutoHebdo.net."
+            }
+        }
+    },
+    "similarListings": {
+        "en": {
+            "listing1": "/offers/bmw-5-series-530i-xdrive-roof-hud-harman-k-intelligent-safety-gasoline-blue-ad39894e-acee-4e67-9915-26eff33c5c0d",
+            "listing2": "/offers/acura-tlx-tech-a-spec-sedan-gasoline-blue-6136d145-c739-4421-bfc7-bd871e769268",
+            "listing3": "/offers/honda-hr-v-ex-l-navi-accident-free-eligible-for-open-road-l-gasoline-grey-52c55472-ff64-402b-b9ba-20122c076e95",
+            "listing4": "/offers/toyota-rav-4-se-clean-carfax-awd-safety-certified-gasoline-black-372cd8fb-1a90-43c2-a458-bab8ff43347c",
+            "listing5": "/offers/acura-mdx-one-owner-brought-and-service-here-gasoline-white-d717d9d3-e745-4b34-b6a3-34b1c6aa2ab4",
+            "similarListingsListPageURL": "/lst/alfa-romeo/L6S3J9%20Brampton,%20ON?atype=C&cy=CA&damaged_listing=exclude&desc=0&lat=43.73423767089844&lon=-79.74612426757812&offer=N&search_id=iyfxx4b3o7&size=20&sort=standard&source=listpage_pagination&ustate=N%2CU&zip=L6S3J9%20Brampton%2C%20ON&zipr=25"
+        },
+        "fr": {
+            "listing1": "/annonces/bmw-5-series-530i-xdrive-roof-hud-harman-k-intelligent-safety-gasoline-blue-ad39894e-acee-4e67-9915-26eff33c5c0d",
+            "listing2": "/annonces/acura-tlx-tech-a-spec-sedan-gasoline-blue-6136d145-c739-4421-bfc7-bd871e769268",
+            "listing3": "/annonces/honda-hr-v-ex-l-navi-accident-free-eligible-for-open-road-l-gasoline-grey-52c55472-ff64-402b-b9ba-20122c076e95",
+            "listing4": "/annonces/toyota-rav-4-se-clean-carfax-awd-safety-certified-gasoline-black-372cd8fb-1a90-43c2-a458-bab8ff43347c",
+            "listing5": "/annonces/acura-mdx-one-owner-brought-and-service-here-gasoline-white-d717d9d3-e745-4b34-b6a3-34b1c6aa2ab4",
+            "similarListingsListPageURL": "/lst/alfa-romeo/L6S3J9%20Brampton,%20ON?atype=C&cy=CA&damaged_listing=exclude&desc=0&lat=43.73423767089844&lon=-79.74612426757812&offer=N&search_id=iyfxx4b3o7&size=20&sort=standard&source=listpage_pagination&ustate=N%2CU&zip=L6S3J9%20Brampton%2C%20ON&zipr=25"
+        }
+    },
+    "homePage": {
+        "Test1": {
+            "location": "M5C1R5",
+            "radius": "100 km",
+            "make": "Toyota",
+            "model": "Camry",
+            "searchResultsTitle": "Toyota Camry",
+            "cityPostalCode": "M5C1R5 Toronto, ON",
+            "makeModelTrimFilterText": "Toyota Camry",
+            "dataLayer": {
+                "postal_code": "m5c1r5"
+            }
+        }
+    },
+    "CPOPage": {
+         "en": {
+            "url": "^https:\\/\\/(cuv\\.acura\\.ca\\/certified-acura-advantages\\.html|www\\.toyota\\.ca\\/en\\/vehicles\\/certified-used\\/?|www\\.bmw\\.ca\\/en\\/ssl\\/PreOwnedSearch\\.html|cuv\\.honda\\.ca\\/honda-certified-advantages\\.html|www\\.ford\\.ca\\/certified-used\\/?)(\\?.*)?$"
+        },
+        "fr": {
+             "url": ""
+        }
+    },
+    "listPage": {
+        "Test1": {
+            "location": "M5C 1R5",
+            "radius": "50 km",
+            "make": "Toyota",
+            "model": "Camry",
+            "trim": "LE",
+            "priceFrom": "15000",
+            "priceTo": "35000"
+        },
+        "Test2": {
+            "listPageURL": "/lst",
+            "location": "L4X2M8",
+            "radius": "Nationwide",
+            "make": "Ford",
+            "model": "Escape",
+            "expectedUrlString": "ford-escape",
+            "dataLayer": {
+                "make": "ford",
+                "model": "escape"
+            }
+        }
+    },
+    "detailPage": {
+        "Test9": [
+            {
+                "listPageURL": "/lst",
+                "location": "L4X2M8",
+                "radius": "Nationwide",
+                "make": "Toyota",
+                "model": "RAV 4"
+            },
+            {
+                "listPageURL": "/lst",
+                "location": "L4X2M8",
+                "radius": "Nationwide",
+                "make": "Honda",
+                "model": "Civic"
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "as24-omp-cui-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AutoScout24/as24-omp-cui-tests.git",
+  "author": "vbochare <Viren.Bochare@autoscout24.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:en-desktop": "PLAYWRIGHT_PROJECT=en-desktop-chrome playwright test --project=en-desktop-chrome --headed --retries=0",
+    "test:en-mobile": "PLAYWRIGHT_PROJECT=en-mobile-safari playwright test --project=en-mobile-safari --headed --retries=0",
+    "test:fr-desktop": "PLAYWRIGHT_PROJECT=fr-desktop-chrome playwright test --project=fr-desktop-chrome --headed --retries=0",
+    "test:fr-mobile": "PLAYWRIGHT_PROJECT=fr-mobile-safari playwright test --project=fr-mobile-safari --headed --retries=0",
+    "test:all": "yarn test:en-desktop && yarn test:en-mobile && yarn test:fr-desktop && yarn test:fr-mobile",
+    "test:en": "yarn test:en-desktop && yarn test:en-mobile",
+    "test:fr": "yarn test:fr-desktop && yarn test:fr-mobile",
+    "test:desktop": "yarn test:en-desktop && yarn test:fr-desktop",
+    "test:mobile": "yarn test:en-mobile && yarn test:fr-mobile",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.928.0",
+    "@aws-sdk/credential-provider-ini": "^3.928.0",
+    "aws-sdk": "^2.1692.0",
+    "p-memoize": "^8.0.0",
+    "playwright": "^1.57.0"
+  }
+}
