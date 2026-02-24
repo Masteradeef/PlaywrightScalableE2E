@@ -17,11 +17,11 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  DD_API_KEY: ${{ secrets.DD_API_KEY }}
-  DATADOG_API_HOST: ${{ secrets.DATADOG_API_HOST }}
-  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-  PLAYWRIGHT_RUN_ID: ${{ github.run_id }}
-  GITHUB_RUN_ID: ${{ github.run_id }}
+  # DD_API_KEY: ${{ secrets.DD_API_KEY }}
+  # DATADOG_API_HOST: ${{ secrets.DATADOG_API_HOST }}
+  # SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  # PLAYWRIGHT_RUN_ID: ${{ github.run_id }}
+  # GITHUB_RUN_ID: ${{ github.run_id }}
 
 permissions:
   contents: read
@@ -268,37 +268,37 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload consolidated report as Pages artifact
-        if: always()
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: test-results
+      # - name: Upload consolidated report as Pages artifact
+        # if: always()
+        # uses: actions/upload-pages-artifact@v3
+        # with:
+          # path: test-results
 
-      - name: Deploy to GitHub Pages
-        if: always()
-        id: deploy
-        uses: actions/deploy-pages@v4
+      # - name: Deploy to GitHub Pages
+        # if: always()
+        # id: deploy
+        # uses: actions/deploy-pages@v4
 
-      - name: Publish report link
-        if: always()
-        shell: bash
-        run: |
-          if [[ -n "${{ steps.deploy.outputs.page_url }}" ]]; then
-            echo "Combined HTML report: [View report](${{ steps.deploy.outputs.page_url }})" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "Combined HTML report: deployment URL unavailable." >> "$GITHUB_STEP_SUMMARY"
-          fi
+      # - name: Publish report link
+        # if: always()
+        # shell: bash
+        # run: |
+          # if [[ -n "${{ steps.deploy.outputs.page_url }}" ]]; then
+            # echo "Combined HTML report: [View report](${{ steps.deploy.outputs.page_url }})" >> "$GITHUB_STEP_SUMMARY"
+          # else
+            # echo "Combined HTML report: deployment URL unavailable." >> "$GITHUB_STEP_SUMMARY"
+          # fi
 
-  slack-notify:
-    name: 🔔 Slack Notification
-    needs: [consolidate]
-    if: always()
-    permissions:
-      contents: read
-      actions: read
-    uses: ./.github/workflows/slack-notification.yml
-    secrets: inherit
-    with:
-      run_id: ${{ github.run_id }}
-      run_number: ${{ github.run_number }}
-      conclusion: ${{ needs.consolidate.result }}
+  # slack-notify:
+    # name: 🔔 Slack Notification
+    # needs: [consolidate]
+    # if: always()
+    # permissions:
+      # contents: read
+      # actions: read
+    # uses: ./.github/workflows/slack-notification.yml
+    # secrets: inherit
+    # with:
+      # run_id: ${{ github.run_id }}
+      # run_number: ${{ github.run_number }}
+      # conclusion: ${{ needs.consolidate.result }}
