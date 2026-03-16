@@ -7,7 +7,7 @@ This project has integrated Playwright MCP (Model Context Protocol) with GitHub 
 
 Generated Playwright test scripts from Jira test scenarios and created bugs using Atlassian Jira MCP along with sending test metrics to Datadog to display test information on Datadog dashboard. 
 
-Also integrated Slackbot with Github Actions workflows for instant status updates via Slack communication. 
+Integrated Slackbot with Github Actions workflows for instant status updates via Slack communication. 
 
 Project has integrated AWS Secrets Manager for secure API key and credential management in local and CI environments also contains tests for automated email verification with email client API's. 
 
