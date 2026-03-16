@@ -1,4 +1,4 @@
-# Modern Playwright Architecture
+# 🎭 Modern Playwright Architecture
 This test automation repository contains a scalable Playwright framework in Typescript. End-to-end tests contains cross browsers, platforms, and multi-language applications tests. 
 
 Integrated with Github Actions CI to run workflows to execute tests on PR merge and run scheduled executions. 
