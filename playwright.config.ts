@@ -10,7 +10,7 @@ import 'dotenv/config'
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-dotenv.config({ path: `.//configs/env/.config.env` })  //Enable to run for new framework structure
+dotenv.config({ path: `.//configs/env/.config.env` })
 // if (process.env.ENV) {
 //   dotenv.config({ path: `.//configs/env/.${process.env.ENV}.env` })
 // }
@@ -20,7 +20,6 @@ process.env.DATADOG_API_HOST = 'api.datadoghq.eu'
  * See https://playwright.dev/docs/test-configuration.
  */
 
-//Enable to run for new framework structure
 export default defineConfig({
   testDir: './tests/specs',
   fullyParallel: process.env.CI ? false : true, // Sequential in CI for stability
