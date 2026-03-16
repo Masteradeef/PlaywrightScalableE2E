@@ -2,7 +2,7 @@
     "credentials": {
         "name": "SpiderMan",
         "username": "favouritelisting_traderqa@mailinator.com",
-        "password": "Test1234!"
+        "password": "{Password_Here}"
     },
     "submitLead": {
         "desktop": {
