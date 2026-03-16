@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/AutoScout24/as24-omp-cui-tests.git",
-  "author": "vbochare <Viren.Bochare@autoscout24.com>",
-  "license": "MIT",
   "scripts": {
     "test": "playwright test",
     "test:en-desktop": "PLAYWRIGHT_PROJECT=en-desktop-chrome playwright test --project=en-desktop-chrome --headed --retries=0",
