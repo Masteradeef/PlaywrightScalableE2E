@@ -1,8 +1,8 @@
 {
-  "name": "as24-omp-cui-tests",
+  "name": "PlaywrightScalableE2E",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/AutoScout24/as24-omp-cui-tests.git",
+  "repository": "https://github.com/Masteradeef/PlaywrightScalableE2E.git",
   "scripts": {
     "test": "playwright test",
     "test:en-desktop": "PLAYWRIGHT_PROJECT=en-desktop-chrome playwright test --project=en-desktop-chrome --headed --retries=0",
