@@ -25,6 +25,7 @@ This repository provides a scalable **Playwright automation framework built with
 - Integrated with **GitHub Actions**
   - Automated test execution on pull request merges
   - Scheduled test runs
+  - (Worksflows on event is disabled for this sample project)
 - Test reports published as workflow artifacts
 
 ### AI-Driven Test Automation
