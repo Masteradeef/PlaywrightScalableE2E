@@ -1,46 +1,136 @@
-# 🎭 Modern Playwright Architecture
-This test automation repository contains a scalable Playwright framework in Typescript. End-to-end tests contains cross browsers, platforms, and multi-language applications tests. 
+# Playwright Test Automation Framework
 
-Integrated with Github Actions CI to run workflows to execute tests on PR merge and run scheduled executions. 
+![CI](https://github.com/Masteradeef/PlaywrightScalableE2E/actions/workflows/continuousIntegrationTests.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Playwright](https://img.shields.io/badge/Playwright-Framework-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+![Node.js](https://img.shields.io/badge/Node.js-%3E%3D16-brightgreen)
 
-This project has integrated Playwright MCP (Model Context Protocol) with GitHub Copilot to generate, debug, execute, and self-heal automated tests from prompts and GitHub issues. 
+---
 
-Generated Playwright test scripts from Jira test scenarios and created bugs using Atlassian Jira MCP along with sending test metrics to Datadog to display test information on Datadog dashboard. 
+## Overview
 
-Integrated Slackbot with Github Actions workflows for instant status updates via Slack communication. 
+This repository provides a scalable **Playwright automation framework built with TypeScript**, designed for robust end-to-end testing across multiple browsers, platforms, and multilingual applications.
 
-Project has integrated AWS Secrets Manager for secure API key and credential management in local and CI environments also contains tests for automated email verification with email client API's. 
+---
 
-Includes custom HTML reporters with test report displayed as artifacts in Github Actions workflow execution.
+## 🚀 Features
 
-## 🛠 Automation tech stack
-**Language/Tools:** Typescript, Playwright, JUnit
+### Cross-Browser & End-to-End Testing
+- Supports end-to-end testing across major browsers (Chromium, Firefox, WebKit)
+- Compatible with multiple platforms (local, CI, cloud)
+- Designed for multilingual application validation
 
-**CI/CD:** Github Actions, Docker
+### CI/CD Integration
+- Integrated with **GitHub Actions**
+  - Automated test execution on pull request merges
+  - Scheduled test runs
+- Test reports published as workflow artifacts
 
-**AI/LLM:** Github Copilot, Claude, Gpt
+### AI-Driven Test Automation
+- Integrated with **Playwright MCP (Model Context Protocol)** and **GitHub Copilot**
+- Capabilities include:
+  - Test generation from prompts
+  - Automated debugging
+  - Self-healing tests
+  - Execution from GitHub issues
 
-**Email Automation:** Email Client API automation (Mailinator, Mailtrap)
+### Test Management & Observability
+- Generates Playwright test scripts from **Jira test scenarios**
+- Creates defects via **Atlassian Jira MCP**
+- Sends test metrics to **Datadog dashboards** for visualization
 
-**Slackbot Integration:** Slackbot integration to Github Actions with playwright-slack-report
+### Notifications & Communication
+- Slack integration via **Slackbot**
+- Real-time test execution and workflow status updates
 
-**AWS Secrets Manager Integration:** AWS Secres Manager integration with @aws-sdk/client-ssm and @aws-sdk/credential-providers
+### Security & Configuration
+- Uses **AWS Secrets Manager** for secure handling of:
+  - API keys
+  - Credentials
+- Supports both local and CI environments
 
-**Execution Platform:** local, Github Actions
+### Email Validation
+- Automated email verification using email client APIs
 
-**Viewports:** Desktop, Mobile web
+### Reporting
+- Custom HTML test reports
+- Reports available as downloadable artifacts in GitHub Actions
 
+---
 
+## 🛠 Tech Stack
 
+- **Framework:** Playwright (TypeScript)
+- **CI/CD:** GitHub Actions
+- **AI Integration:** Playwright MCP, GitHub Copilot
+- **Test Management:** Jira (Atlassian MCP)
+- **Monitoring:** Datadog
+- **Secrets Management:** AWS Secrets Manager
+- **Notifications:** Slack
 
+---
 
+## 📦 Installation
 
+```bash
+npm install
+```
 
+---
 
+## ▶️ Running Tests
 
+```bash
+# Run all tests
+npx playwright test
 
+# Run tests in headed mode
+npx playwright test --headed
 
+# Run specific test file
+npx playwright test tests/example.spec.ts
+```
 
+---
 
+## 📊 Reports
 
+- HTML reports are generated after each run
+- Accessible locally or via GitHub Actions artifacts
 
+```bash
+npx playwright show-report
+```
+
+---
+
+## 🔐 Environment Configuration
+
+- Secrets are managed via **AWS Secrets Manager**
+- Ensure required environment variables are configured before execution
+
+---
+
+## 🔔 Notifications
+
+- Slack notifications are triggered via GitHub Actions workflows
+- Provides instant updates on:
+  - Test execution status
+  - Failures
+  - Pipeline results
+
+---
+
+## 🌟 Highlights
+
+- Scalable and modular framework architecture
+- AI-assisted test generation and maintenance
+- Full CI/CD integration
+- Secure and observable test infrastructure
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
