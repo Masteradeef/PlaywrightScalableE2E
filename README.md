@@ -1,6 +1,6 @@
 # Playwright Test Automation Framework
 
-![CI](https://github.com/Masteradeef/PlaywrightScalableE2E/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Masteradeef/PlaywrightScalableE2E/blob/main/.ci/pipelines/continuousIntegrationTests.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Playwright](https://img.shields.io/badge/Playwright-Framework-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
