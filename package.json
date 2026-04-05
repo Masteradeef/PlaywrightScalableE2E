@@ -1,0 +1,50 @@
+{
+  "name": "PlaywrightScalableE2E",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Masteradeef/PlaywrightScalableE2E.git",
+  
+  "scripts": {
+    "test": "playwright test --config e2e.config.ts",
+    "test:en-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-en playwright test --config e2e.config.ts --project=desktop-chrome-en --headed --retries=0",
+    "test:en-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-en playwright test --config e2e.config.ts --project=mobile-safari-en --headed --retries=0",
+    "test:fr-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-fr playwright test --config e2e.config.ts --project=desktop-chrome-fr --headed --retries=0",
+    "test:fr-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-fr playwright test --config e2e.config.ts --project=mobile-safari-fr --headed --retries=0",
+    "test:all": "yarn test:en-desktop && yarn test:en-mobile && yarn test:fr-desktop && yarn test:fr-mobile",
+    "test:en": "yarn test:en-desktop && yarn test:en-mobile",
+    "test:fr": "yarn test:fr-desktop && yarn test:fr-mobile",
+    "test:desktop": "yarn test:en-desktop && yarn test:fr-desktop",
+    "test:mobile": "yarn test:en-mobile && yarn test:fr-mobile",
+    "report": "playwright show-report --config e2e.config.ts",
+    "codegen": "playwright codegen --config e2e.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.928.0",
+    "@aws-sdk/credential-provider-ini": "^3.928.0",
+    "aws-sdk": "^2.1692.0",
+    "p-memoize": "^8.0.0",
+    "playwright": "^1.57.0"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
