@@ -1,0 +1,3218 @@
+{
+  "config": {
+    "configFile": "D:\\VS Code Repo\\PlaywrightScalableE2E\\playwright.config.ts",
+    "rootDir": "D:/VS Code Repo/PlaywrightScalableE2E/scenarios/specifications",
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\support\\globalSetup.ts",
+    "globalTeardown": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\support\\globalTeardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "blob",
+        {
+          "outputDir": "blob-report"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "utilities/outputs/results.json"
+        }
+      ],
+      [
+        "D:\\VS Code Repo\\PlaywrightScalableE2E\\core\\helpers\\reportGenerators\\custom-html-reporter.ts",
+        {
+          "outputFile": "enhanced-report.html",
+          "outputDir": "utilities/outputs"
+        }
+      ],
+      [
+        "D:\\VS Code Repo\\PlaywrightScalableE2E\\core\\helpers\\reportGenerators\\datadog-reporter.ts",
+        {
+          "debug": true
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": true,
+    "projects": [
+      {
+        "outputDir": "D:/VS Code Repo/PlaywrightScalableE2E/utilities/outputs",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "desktop-chrome-en",
+        "name": "desktop-chrome-en",
+        "testDir": "D:/VS Code Repo/PlaywrightScalableE2E/scenarios/specifications",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/VS Code Repo/PlaywrightScalableE2E/utilities/outputs",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "mobile-safari-en",
+        "name": "mobile-safari-en",
+        "testDir": "D:/VS Code Repo/PlaywrightScalableE2E/scenarios/specifications",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "D:/VS Code Repo/PlaywrightScalableE2E/utilities/outputs",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "desktop-chrome-fr",
+        "name": "desktop-chrome-fr",
+        "testDir": "D:/VS Code Repo/PlaywrightScalableE2E/scenarios/specifications",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/VS Code Repo/PlaywrightScalableE2E/utilities/outputs",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "mobile-safari-fr",
+        "name": "mobile-safari-fr",
+        "testDir": "D:/VS Code Repo/PlaywrightScalableE2E/scenarios/specifications",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "icon.test.ts",
+      "file": "icon.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "When a consumer sends DWW Lead ",
+          "file": "icon.test.ts",
+          "line": 34,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DWW - Test 1: a consumer should receive a confirmation Email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b0a8ef68687ddbc27760-603916aa7f13304a1a94",
+              "file": "icon.test.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "DWW - Test 1: a consumer should receive a confirmation Email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b0a8ef68687ddbc27760-5b747dc50f0edc536fc0",
+              "file": "icon.test.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "DWW - Test 1: a consumer should receive a confirmation Email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b0a8ef68687ddbc27760-606b89d8c0b99fd07579",
+              "file": "icon.test.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "DWW - Test 1: a consumer should receive a confirmation Email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b0a8ef68687ddbc27760-ea7b642dfb0df44e825c",
+              "file": "icon.test.ts",
+              "line": 74,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "listingPage.test.ts",
+      "file": "listingPage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "An anonymous user",
+          "file": "listingPage.test.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "List Page - Test 1 : should search by Make, Model, Trim, and Price",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-6344c70f24a02fd9c7cf",
+              "file": "listingPage.test.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 2 : search by Make, Model on list page and go to detail page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-e19076493e21909048a7",
+              "file": "listingPage.test.ts",
+              "line": 153,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 5 : Verify the Recommender sections are displayed on List page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-b2d78c1eb79a73aee594",
+              "file": "listingPage.test.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 6 : should search by Vehicle Condition CPO",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-fec7b30a7c5dec58f8a6",
+              "file": "listingPage.test.ts",
+              "line": 308,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 1 : should search by Make, Model, Trim, and Price",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-27e73884867ecdb8c4d5",
+              "file": "listingPage.test.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 2 : search by Make, Model on list page and go to detail page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-b9c49a6a30b4896f0fd0",
+              "file": "listingPage.test.ts",
+              "line": 153,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 5 : Verify the Recommender sections are displayed on List page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-8ef08632a2db11560803",
+              "file": "listingPage.test.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 6 : should search by Vehicle Condition CPO",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-25efb6328b8eb2fdbee5",
+              "file": "listingPage.test.ts",
+              "line": 308,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 1 : should search by Make, Model, Trim, and Price",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-7016933f923917e3adf1",
+              "file": "listingPage.test.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 2 : search by Make, Model on list page and go to detail page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-a682f222686b16dcb703",
+              "file": "listingPage.test.ts",
+              "line": 153,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 5 : Verify the Recommender sections are displayed on List page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-c15f1da8db1c277be72e",
+              "file": "listingPage.test.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 6 : should search by Vehicle Condition CPO",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-f0a2dde1e909fe2abefd",
+              "file": "listingPage.test.ts",
+              "line": 308,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 1 : should search by Make, Model, Trim, and Price",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-9005e95eb5e56c736055",
+              "file": "listingPage.test.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 2 : search by Make, Model on list page and go to detail page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-ad218d7ceadc27255c49",
+              "file": "listingPage.test.ts",
+              "line": 153,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 5 : Verify the Recommender sections are displayed on List page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-87761fbca783826cef99",
+              "file": "listingPage.test.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 6 : should search by Vehicle Condition CPO",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-54435c423784fd95bd5d",
+              "file": "listingPage.test.ts",
+              "line": 308,
+              "column": 7
+            }
+          ],
+          "suites": [
+            {
+              "title": "An anonymous user : Saved Search Test",
+              "file": "listingPage.test.ts",
+              "line": 210,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "List Page - Test 4 : Verify User is able to Save Search and Login in My Account",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "desktop-chrome-en",
+                      "projectName": "desktop-chrome-en",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "7f929860ed4fc933cfa8-1169d2d511ebd2d46a3d",
+                  "file": "listingPage.test.ts",
+                  "line": 242,
+                  "column": 7
+                },
+                {
+                  "title": "List Page - Test 4 : Verify User is able to Save Search and Login in My Account",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 180000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "mobile-safari-en",
+                      "projectName": "mobile-safari-en",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "7f929860ed4fc933cfa8-749f76f9c831529c5af0",
+                  "file": "listingPage.test.ts",
+                  "line": 242,
+                  "column": 7
+                },
+                {
+                  "title": "List Page - Test 4 : Verify User is able to Save Search and Login in My Account",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "desktop-chrome-fr",
+                      "projectName": "desktop-chrome-fr",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "7f929860ed4fc933cfa8-21d142f0f5047adf086a",
+                  "file": "listingPage.test.ts",
+                  "line": 242,
+                  "column": 7
+                },
+                {
+                  "title": "List Page - Test 4 : Verify User is able to Save Search and Login in My Account",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 180000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "mobile-safari-fr",
+                      "projectName": "mobile-safari-fr",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "7f929860ed4fc933cfa8-619132e999baab7b2ea6",
+                  "file": "listingPage.test.ts",
+                  "line": 242,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "A Logged in user",
+          "file": "listingPage.test.ts",
+          "line": 349,
+          "column": 6,
+          "specs": [
+            {
+              "title": "List Page - Test 7 : Login in My Account and Verify User is able to Save Search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-39a2c73c61029b2461b8",
+              "file": "listingPage.test.ts",
+              "line": 387,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 7 : Login in My Account and Verify User is able to Save Search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-a9b9650bf3cdaefab4a8",
+              "file": "listingPage.test.ts",
+              "line": 387,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 7 : Login in My Account and Verify User is able to Save Search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-50f8621708454c25e56e",
+              "file": "listingPage.test.ts",
+              "line": 387,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 7 : Login in My Account and Verify User is able to Save Search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-505e873b2ed2a7525893",
+              "file": "listingPage.test.ts",
+              "line": 387,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "An anonymous user",
+          "file": "listingPage.test.ts",
+          "line": 432,
+          "column": 6,
+          "specs": [
+            {
+              "title": "List Page - Test 3 : Verify List page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-6933cd3e708f9c5f9443",
+              "file": "listingPage.test.ts",
+              "line": 452,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 3 : Verify List page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-c9c8649d828c517d88f3",
+              "file": "listingPage.test.ts",
+              "line": 452,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 3 : Verify List page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-2b8f6886d14ee91b6d81",
+              "file": "listingPage.test.ts",
+              "line": 452,
+              "column": 7
+            },
+            {
+              "title": "List Page - Test 3 : Verify List page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7f929860ed4fc933cfa8-76c90fc00940fc1b1d3e",
+              "file": "listingPage.test.ts",
+              "line": 452,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mainPage.test.ts",
+      "file": "mainPage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Page Tests",
+          "file": "mainPage.test.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Home Page - Test 1 : should search vehicle by Make, Model, and Postal Code From Home Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\specifications\\mainPage.test.ts",
+                        "line": 50,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-2f22139fe3a7699868f3",
+              "file": "mainPage.test.ts",
+              "line": 50,
+              "column": 8
+            },
+            {
+              "title": "Home page : Test 2 : Postal code persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-cba9558e5d8ee25f4588",
+              "file": "mainPage.test.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "Home page : Test 3 : City persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-19bfb272871ec5f03ad1",
+              "file": "mainPage.test.ts",
+              "line": 142,
+              "column": 7
+            },
+            {
+              "title": "Home Page - Test 1 : should search vehicle by Make, Model, and Postal Code From Home Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\specifications\\mainPage.test.ts",
+                        "line": 50,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-c9288f7a244eb4c96b8a",
+              "file": "mainPage.test.ts",
+              "line": 50,
+              "column": 8
+            },
+            {
+              "title": "Home page : Test 2 : Postal code persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-81e4c62cc7a9812c7282",
+              "file": "mainPage.test.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "Home page : Test 3 : City persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-ccea50c31522a2f0be4a",
+              "file": "mainPage.test.ts",
+              "line": 142,
+              "column": 7
+            },
+            {
+              "title": "Home Page - Test 1 : should search vehicle by Make, Model, and Postal Code From Home Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\specifications\\mainPage.test.ts",
+                        "line": 50,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-c9f3a6b28ef2d9ab9d9a",
+              "file": "mainPage.test.ts",
+              "line": 50,
+              "column": 8
+            },
+            {
+              "title": "Home page : Test 2 : Postal code persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-53c61b90d3468d180c27",
+              "file": "mainPage.test.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "Home page : Test 3 : City persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-8444a117a421b1bb74db",
+              "file": "mainPage.test.ts",
+              "line": 142,
+              "column": 7
+            },
+            {
+              "title": "Home Page - Test 1 : should search vehicle by Make, Model, and Postal Code From Home Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\VS Code Repo\\PlaywrightScalableE2E\\scenarios\\specifications\\mainPage.test.ts",
+                        "line": 50,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-d7b73b0c6c058b2fea8a",
+              "file": "mainPage.test.ts",
+              "line": 50,
+              "column": 8
+            },
+            {
+              "title": "Home page : Test 2 : Postal code persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-2bab878b908cde201bcc",
+              "file": "mainPage.test.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "Home page : Test 3 : City persistence across List and Detail page navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "686d9ed6c8ecf3414fe5-253e55ae1cbd994d1b96",
+              "file": "mainPage.test.ts",
+              "line": 142,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mlc.test.ts",
+      "file": "mlc.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "A Logged-in User ",
+          "file": "mlc.test.ts",
+          "line": 37,
+          "column": 15,
+          "specs": [
+            {
+              "title": "should create a Car (C) listing - Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-75ee110c02c3b4dd9b38",
+              "file": "mlc.test.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "should edit a Car (C) listing - Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-35ce9ca759a958e9e2b1",
+              "file": "mlc.test.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "should delete a Car (C) listing - Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-3dc0f25bca699e8e7466",
+              "file": "mlc.test.ts",
+              "line": 227,
+              "column": 7
+            },
+            {
+              "title": "should create a Car (C) listing - Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-e6c96e77e1ed5525b34d",
+              "file": "mlc.test.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "should edit a Car (C) listing - Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-3643814641fbfd98a931",
+              "file": "mlc.test.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "should delete a Car (C) listing - Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-69ba8136176f56b82a6a",
+              "file": "mlc.test.ts",
+              "line": 227,
+              "column": 7
+            },
+            {
+              "title": "should create a Car (C) listing - Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-40fcbc9d2975529dbecf",
+              "file": "mlc.test.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "should edit a Car (C) listing - Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-85348ea10b8220a69460",
+              "file": "mlc.test.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "should delete a Car (C) listing - Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-eb22c7c853577d7abd2c",
+              "file": "mlc.test.ts",
+              "line": 227,
+              "column": 7
+            },
+            {
+              "title": "should create a Car (C) listing - Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-cb980b484cf39019ee16",
+              "file": "mlc.test.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "should edit a Car (C) listing - Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-d16ddee3d061d8d607b8",
+              "file": "mlc.test.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "should delete a Car (C) listing - Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-1c6466988a576a82bc04",
+              "file": "mlc.test.ts",
+              "line": 227,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "A Logged-in User ",
+          "file": "mlc.test.ts",
+          "line": 239,
+          "column": 15,
+          "specs": [
+            {
+              "title": "should create a Caravan/RV (N) listing - Test 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-b59e1e50f28952e3faef",
+              "file": "mlc.test.ts",
+              "line": 271,
+              "column": 7
+            },
+            {
+              "title": "should edit a Caravan/RV (N) listing - Test 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-cf4cfe7d2e9176850960",
+              "file": "mlc.test.ts",
+              "line": 389,
+              "column": 7
+            },
+            {
+              "title": "should delete a Caravan/RV (N) listing - Test 6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-c47aee8d64b1b4ae0cf2",
+              "file": "mlc.test.ts",
+              "line": 437,
+              "column": 7
+            },
+            {
+              "title": "should create a Caravan/RV (N) listing - Test 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-604ff7b08c8d684e29f1",
+              "file": "mlc.test.ts",
+              "line": 271,
+              "column": 7
+            },
+            {
+              "title": "should edit a Caravan/RV (N) listing - Test 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-6d928b8df254a344fb30",
+              "file": "mlc.test.ts",
+              "line": 389,
+              "column": 7
+            },
+            {
+              "title": "should delete a Caravan/RV (N) listing - Test 6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-8888c3c6bb45bf6847a3",
+              "file": "mlc.test.ts",
+              "line": 437,
+              "column": 7
+            },
+            {
+              "title": "should create a Caravan/RV (N) listing - Test 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-15a0dcc0691b8fdcd755",
+              "file": "mlc.test.ts",
+              "line": 271,
+              "column": 7
+            },
+            {
+              "title": "should edit a Caravan/RV (N) listing - Test 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-48436a2b374c7194cd56",
+              "file": "mlc.test.ts",
+              "line": 389,
+              "column": 7
+            },
+            {
+              "title": "should delete a Caravan/RV (N) listing - Test 6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-2b96dd876acc8097c34d",
+              "file": "mlc.test.ts",
+              "line": 437,
+              "column": 7
+            },
+            {
+              "title": "should create a Caravan/RV (N) listing - Test 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-bdbbbeb4bf8f7cf505fd",
+              "file": "mlc.test.ts",
+              "line": 271,
+              "column": 7
+            },
+            {
+              "title": "should edit a Caravan/RV (N) listing - Test 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-ecf7bded792ef5ac6db3",
+              "file": "mlc.test.ts",
+              "line": 389,
+              "column": 7
+            },
+            {
+              "title": "should delete a Caravan/RV (N) listing - Test 6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-8ee43200c08029cec2de",
+              "file": "mlc.test.ts",
+              "line": 437,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "A Logged-in User ",
+          "file": "mlc.test.ts",
+          "line": 449,
+          "column": 15,
+          "specs": [
+            {
+              "title": "should create a Commercial/Heavy Trucks (X) listing - Test 7",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-21da93fc3d3c7e7103ab",
+              "file": "mlc.test.ts",
+              "line": 481,
+              "column": 7
+            },
+            {
+              "title": "should edit a Commercial/Heavy Trucks (X) listing - Test 8",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-46250500e2a30e63c96b",
+              "file": "mlc.test.ts",
+              "line": 591,
+              "column": 7
+            },
+            {
+              "title": "should delete a Commercial/Heavy Trucks (X) listing - Test 9",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-8104e69431c6018d85de",
+              "file": "mlc.test.ts",
+              "line": 640,
+              "column": 7
+            },
+            {
+              "title": "should create a Commercial/Heavy Trucks (X) listing - Test 7",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-0ac9c0489d5144ab1a2d",
+              "file": "mlc.test.ts",
+              "line": 481,
+              "column": 7
+            },
+            {
+              "title": "should edit a Commercial/Heavy Trucks (X) listing - Test 8",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-fbd7ee0f459f27f9ad20",
+              "file": "mlc.test.ts",
+              "line": 591,
+              "column": 7
+            },
+            {
+              "title": "should delete a Commercial/Heavy Trucks (X) listing - Test 9",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-34c53a4d902fef4fa87b",
+              "file": "mlc.test.ts",
+              "line": 640,
+              "column": 7
+            },
+            {
+              "title": "should create a Commercial/Heavy Trucks (X) listing - Test 7",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-0ec52e21e9f28d08311e",
+              "file": "mlc.test.ts",
+              "line": 481,
+              "column": 7
+            },
+            {
+              "title": "should edit a Commercial/Heavy Trucks (X) listing - Test 8",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-79aeae68ddc7af6bd65e",
+              "file": "mlc.test.ts",
+              "line": 591,
+              "column": 7
+            },
+            {
+              "title": "should delete a Commercial/Heavy Trucks (X) listing - Test 9",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-f1bce9ab6bf36190bf80",
+              "file": "mlc.test.ts",
+              "line": 640,
+              "column": 7
+            },
+            {
+              "title": "should create a Commercial/Heavy Trucks (X) listing - Test 7",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-e78c0d81f961c9ba92fd",
+              "file": "mlc.test.ts",
+              "line": 481,
+              "column": 7
+            },
+            {
+              "title": "should edit a Commercial/Heavy Trucks (X) listing - Test 8",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-a8b2432fc35d92712f5f",
+              "file": "mlc.test.ts",
+              "line": 591,
+              "column": 7
+            },
+            {
+              "title": "should delete a Commercial/Heavy Trucks (X) listing - Test 9",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e676f7e6fdd971489c42-1a58cace210e1bd6fc90",
+              "file": "mlc.test.ts",
+              "line": 640,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "vehicleDetails.test.ts",
+      "file": "vehicleDetails.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Vehicle Detail Page Tests - Logged-in User",
+          "file": "vehicleDetails.test.ts",
+          "line": 37,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 1: should submit a General Inquiry sales lead by clicking Send Email button on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-1aa036339e88a596f126",
+              "file": "vehicleDetails.test.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 2: should submit a General Inquiry sales lead from Dealer Info Section on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-217d166b95f776f44bf6",
+              "file": "vehicleDetails.test.ts",
+              "line": 205,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 3: should see favourite listing on My Account Favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-d5a66a838e77cffb27e2",
+              "file": "vehicleDetails.test.ts",
+              "line": 228,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 1: should submit a General Inquiry sales lead by clicking Send Email button on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-89eb122734b809e58172",
+              "file": "vehicleDetails.test.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 2: should submit a General Inquiry sales lead from Dealer Info Section on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-8517c4de4777014bdd9c",
+              "file": "vehicleDetails.test.ts",
+              "line": 205,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 3: should see favourite listing on My Account Favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-64db0d43095588725119",
+              "file": "vehicleDetails.test.ts",
+              "line": 228,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 1: should submit a General Inquiry sales lead by clicking Send Email button on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-977241d76ccfa9556bfc",
+              "file": "vehicleDetails.test.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 2: should submit a General Inquiry sales lead from Dealer Info Section on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-c14e3f8119e1892464c0",
+              "file": "vehicleDetails.test.ts",
+              "line": 205,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 3: should see favourite listing on My Account Favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-aa4c01058c9f33fbea25",
+              "file": "vehicleDetails.test.ts",
+              "line": 228,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 1: should submit a General Inquiry sales lead by clicking Send Email button on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-a1d7a19493c9dc7d6104",
+              "file": "vehicleDetails.test.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 2: should submit a General Inquiry sales lead from Dealer Info Section on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-60336ed7583c031d46b9",
+              "file": "vehicleDetails.test.ts",
+              "line": 205,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 3: should see favourite listing on My Account Favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-74a2408adb188ba5e1cc",
+              "file": "vehicleDetails.test.ts",
+              "line": 228,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Vehicle Detail Page Tests - Desktop Only",
+          "file": "vehicleDetails.test.ts",
+          "line": 240,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 4: should submit a General Inquiry sales lead by clicking Contact Seller button on Vehicle Detail Page on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-11fa054603f56e9f92ba",
+              "file": "vehicleDetails.test.ts",
+              "line": 275,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 5: should submit a Sales Lead from Gallery on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-daac2a92d3f4b54caa8e",
+              "file": "vehicleDetails.test.ts",
+              "line": 299,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 4: should submit a General Inquiry sales lead by clicking Contact Seller button on Vehicle Detail Page on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-19db5bdcfb82730e3c0b",
+              "file": "vehicleDetails.test.ts",
+              "line": 275,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 5: should submit a Sales Lead from Gallery on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-68267232757f1ccc143d",
+              "file": "vehicleDetails.test.ts",
+              "line": 299,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 4: should submit a General Inquiry sales lead by clicking Contact Seller button on Vehicle Detail Page on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-2ee611b44c6f27bec262",
+              "file": "vehicleDetails.test.ts",
+              "line": 275,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 5: should submit a Sales Lead from Gallery on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-13bc3ba153a364815f5c",
+              "file": "vehicleDetails.test.ts",
+              "line": 299,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 4: should submit a General Inquiry sales lead by clicking Contact Seller button on Vehicle Detail Page on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-4b1991895f50cba9efd1",
+              "file": "vehicleDetails.test.ts",
+              "line": 275,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 5: should submit a Sales Lead from Gallery on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-e8247850ddfe53403619",
+              "file": "vehicleDetails.test.ts",
+              "line": 299,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Vehicle Detail Page Tests - Anonymous User",
+          "file": "vehicleDetails.test.ts",
+          "line": 420,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 6: should submit Request for CARFAX History Report from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-4ac58430c84edd975482",
+              "file": "vehicleDetails.test.ts",
+              "line": 441,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 7: should see Price of the vehicle on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-5e8c6269c77ffef499eb",
+              "file": "vehicleDetails.test.ts",
+              "line": 510,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 8: should see View Similar Listing section (Recommender) on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-121dc25e05b7097fd445",
+              "file": "vehicleDetails.test.ts",
+              "line": 519,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Toyota RAV 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-a2cca3ac1841b11c87e6",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Honda Civic",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-c49fde56816cdd19303f",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 6: should submit Request for CARFAX History Report from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-ff729594ed7c1045fe7b",
+              "file": "vehicleDetails.test.ts",
+              "line": 441,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 7: should see Price of the vehicle on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-5b07313aa6a5d3a11422",
+              "file": "vehicleDetails.test.ts",
+              "line": 510,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 8: should see View Similar Listing section (Recommender) on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-bc7945f7b6f106870d50",
+              "file": "vehicleDetails.test.ts",
+              "line": 519,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Toyota RAV 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-b9cfd624fbef9985df34",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Honda Civic",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-0fa4264e88beabd6fd13",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 6: should submit Request for CARFAX History Report from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-201d137c5ed154924542",
+              "file": "vehicleDetails.test.ts",
+              "line": 441,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 7: should see Price of the vehicle on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-8478cc1412e454dae9ef",
+              "file": "vehicleDetails.test.ts",
+              "line": 510,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 8: should see View Similar Listing section (Recommender) on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-cbc020fc26545f305914",
+              "file": "vehicleDetails.test.ts",
+              "line": 519,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Toyota RAV 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-5b898be6036250b16066",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Honda Civic",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-2943897c54823a09e639",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 6: should submit Request for CARFAX History Report from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-f16ffc0c45fed91ff564",
+              "file": "vehicleDetails.test.ts",
+              "line": 441,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 7: should see Price of the vehicle on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-5d8acc3d75ca5f7a7fd1",
+              "file": "vehicleDetails.test.ts",
+              "line": 510,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 8: should see View Similar Listing section (Recommender) on Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-1b560790babc2ae0a710",
+              "file": "vehicleDetails.test.ts",
+              "line": 519,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Toyota RAV 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-6267feab37b008a81aa3",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            },
+            {
+              "title": "Detail Page - Test 9: should verify CPO on Detail Page - Honda Civic",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-2c15d668b5d3b1ec7167",
+              "file": "vehicleDetails.test.ts",
+              "line": 534,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Vehicle Detail Page Tests - Mobile Only",
+          "file": "vehicleDetails.test.ts",
+          "line": 572,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 10: should submit Text lead by clicking on Text button on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-ddfd23204b7267b4516d",
+              "file": "vehicleDetails.test.ts",
+              "line": 604,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 11: should click on button and get Phone number on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-5ff9ed960b8d6d2e0e44",
+              "file": "vehicleDetails.test.ts",
+              "line": 674,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 10: should submit Text lead by clicking on Text button on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-a5d8c15a67ba435f3f8d",
+              "file": "vehicleDetails.test.ts",
+              "line": 604,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 11: should click on button and get Phone number on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-f4348719b35a61b4c862",
+              "file": "vehicleDetails.test.ts",
+              "line": 674,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 10: should submit Text lead by clicking on Text button on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-2a67be2798322c457b4b",
+              "file": "vehicleDetails.test.ts",
+              "line": 604,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 11: should click on button and get Phone number on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-956ca1ead1d85194f91a",
+              "file": "vehicleDetails.test.ts",
+              "line": 674,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 10: should submit Text lead by clicking on Text button on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-dc054f8a6c400b9ab730",
+              "file": "vehicleDetails.test.ts",
+              "line": 604,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 11: should click on button and get Phone number on Vehicle Detail Page in Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-33b7efaf4f3e0e680129",
+              "file": "vehicleDetails.test.ts",
+              "line": 674,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "ETI Tests - An Anonymous user",
+          "file": "vehicleDetails.test.ts",
+          "line": 683,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 12: should get ETI estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-75336d3f9a13e25ad080",
+              "file": "vehicleDetails.test.ts",
+              "line": 742,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 13: should edit ETI and get estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-a13ad58158eaac1b56b9",
+              "file": "vehicleDetails.test.ts",
+              "line": 758,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 14: should delete ETI from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-60d05404fe05f48948f5",
+              "file": "vehicleDetails.test.ts",
+              "line": 793,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 12: should get ETI estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-7aea8f2218bbdd13078a",
+              "file": "vehicleDetails.test.ts",
+              "line": 742,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 13: should edit ETI and get estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-6c1233c8175799f3afe2",
+              "file": "vehicleDetails.test.ts",
+              "line": 758,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 14: should delete ETI from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-8704ddd29d3b3762d11c",
+              "file": "vehicleDetails.test.ts",
+              "line": 793,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 12: should get ETI estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-d172aad51db05fefe1ce",
+              "file": "vehicleDetails.test.ts",
+              "line": 742,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 13: should edit ETI and get estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-30db6c5b65f1d1317b98",
+              "file": "vehicleDetails.test.ts",
+              "line": 758,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 14: should delete ETI from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-85fde712851666443784",
+              "file": "vehicleDetails.test.ts",
+              "line": 793,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 12: should get ETI estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-0bcddf0d0d14a4b462ed",
+              "file": "vehicleDetails.test.ts",
+              "line": 742,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 13: should edit ETI and get estimate from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-9f528e84bc625ab153d1",
+              "file": "vehicleDetails.test.ts",
+              "line": 758,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 14: should delete ETI from Vehicle Detail Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-1788153b4d8c40f7858d",
+              "file": "vehicleDetails.test.ts",
+              "line": 793,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Reverse proxy tests",
+          "file": "vehicleDetails.test.ts",
+          "line": 801,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Detail Page - Test 15 : Verify Detail page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-en",
+                  "projectName": "desktop-chrome-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-b72ce77cc200f111fa96",
+              "file": "vehicleDetails.test.ts",
+              "line": 817,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 15 : Verify Detail page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-en",
+                  "projectName": "mobile-safari-en",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-7797d62c61ae4f295739",
+              "file": "vehicleDetails.test.ts",
+              "line": 817,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 15 : Verify Detail page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome-fr",
+                  "projectName": "desktop-chrome-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-f65103d15b5505a421a2",
+              "file": "vehicleDetails.test.ts",
+              "line": 817,
+              "column": 7
+            },
+            {
+              "title": "Detail Page - Test 15 : Verify Detail page URL for legacy Trader users bucketed to OMP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari-fr",
+                  "projectName": "mobile-safari-fr",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1eddb36a88e97a50ce7a-520d2d6f3c29e9add7ac",
+              "file": "vehicleDetails.test.ts",
+              "line": 817,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-06T16:25:49.745Z",
+    "duration": 2206.669,
+    "expected": 0,
+    "skipped": 144,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

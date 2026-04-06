@@ -5,18 +5,18 @@
   "repository": "https://github.com/Masteradeef/PlaywrightScalableE2E.git",
   
   "scripts": {
-    "test": "playwright test --config e2e.config.ts",
-    "test:en-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-en playwright test --config e2e.config.ts --project=desktop-chrome-en --headed --retries=0",
-    "test:en-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-en playwright test --config e2e.config.ts --project=mobile-safari-en --headed --retries=0",
-    "test:fr-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-fr playwright test --config e2e.config.ts --project=desktop-chrome-fr --headed --retries=0",
-    "test:fr-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-fr playwright test --config e2e.config.ts --project=mobile-safari-fr --headed --retries=0",
+    "test": "playwright test --config playwright.config.ts",
+    "test:en-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-en playwright test --config playwright.config.ts --project=desktop-chrome-en --headed --retries=0",
+    "test:en-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-en playwright test --config playwright.config.ts --project=mobile-safari-en --headed --retries=0",
+    "test:fr-desktop": "PLAYWRIGHT_PROJECT=desktop-chrome-fr playwright test --config playwright.config.ts --project=desktop-chrome-fr --headed --retries=0",
+    "test:fr-mobile": "PLAYWRIGHT_PROJECT=mobile-safari-fr playwright test --config playwright.config.ts --project=mobile-safari-fr --headed --retries=0",
     "test:all": "yarn test:en-desktop && yarn test:en-mobile && yarn test:fr-desktop && yarn test:fr-mobile",
     "test:en": "yarn test:en-desktop && yarn test:en-mobile",
     "test:fr": "yarn test:fr-desktop && yarn test:fr-mobile",
     "test:desktop": "yarn test:en-desktop && yarn test:fr-desktop",
     "test:mobile": "yarn test:en-mobile && yarn test:fr-mobile",
-    "report": "playwright show-report --config e2e.config.ts",
-    "codegen": "playwright codegen --config e2e.config.ts"
+    "report": "playwright show-report --config playwright.config.ts",
+    "codegen": "playwright codegen --config playwright.config.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",

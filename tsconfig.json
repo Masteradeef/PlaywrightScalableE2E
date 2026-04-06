@@ -28,7 +28,7 @@
     "scenarios/**/*.ts",
     "core/**/*.ts",
     "configuration/**/*.ts",
-    "e2e.config.ts",
+    "playwright.config.ts",
     "utilities/**/*.ts",
     "*.ts"
   ],
