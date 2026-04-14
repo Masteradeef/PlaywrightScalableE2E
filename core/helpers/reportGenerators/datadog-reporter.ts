@@ -59,7 +59,7 @@ export default class DataDogReporter implements Reporter {
     const apiKey =
       envApiKey ||
       (await fetchSSMTokenCached(
-        '/as24-home/DD_API_KEY',
+        '/project_path/DD_API_KEY',
         SsmDdApiTokenType.FetchDdApiToken,
       ))
 
@@ -72,7 +72,7 @@ export default class DataDogReporter implements Reporter {
 
     this.apiKey = apiKey
     this.runId = process.env.PLAYWRIGHT_RUN_ID || `run_${Date.now()}`
-    this.teamName = 'om-cui-tests'
+    this.teamName = 'playwright-tests'
     
     console.log(`✅ Datadog reporter initialized:`)
     console.log(`   Host: ${this.datadogHost}`)

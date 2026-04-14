@@ -36,13 +36,13 @@ async function sendSlackNotification() {
   
   if (!hasResults) {
     statusEmoji = '⚠️';
-    statusText = 'CUI OM Tests Not Found';
+    statusText = 'Tests Not Found';
   } else if (hasFailed) {
     statusEmoji = '❌';
-    statusText = 'CUI OM Tests Failed';
+    statusText = 'Tests Failed';
   } else {
     statusEmoji = '✅';
-    statusText = 'CUI OM Tests Passed';
+    statusText = 'Tests Passed';
   }
 
   // Create blocks array
@@ -129,7 +129,7 @@ async function sendSlackNotification() {
 
   // Create Slack message
   const payload = {
-    text: `${statusEmoji} CUI OM Tests - Execution Complete`,
+    text: `${statusEmoji} Tests - Execution Complete`,
     blocks
   };
 
